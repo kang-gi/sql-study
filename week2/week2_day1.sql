@@ -1,3 +1,4 @@
+--inner join 사용법
 select orders.order_id,name,city,amount,category from orders inner join customers on orders.customer_id = customers.customer_id
 INNER join products on orders.order_id = products.order_id where city = '서울' /*서울 고객의 주문만 보기*/
 
